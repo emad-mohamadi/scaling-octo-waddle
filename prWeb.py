@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('my_data.csv', encoding='latin1')
+df = pd.read_csv('https://drive.google.com/uc?id=1RigQagTT8JfNTCLhP461iTaCs7fwBVYv', encoding='latin1', low_memory=False)
 
 st.title("Professor Search App")
 
@@ -75,4 +75,5 @@ if st.checkbox("Do you want to see a histogram of a numeric column?"):
     ax.set_title(f"Distribution of {col_chart}")
     ax.set_xlabel(col_chart)
     ax.set_ylabel("Frequency")
+
     st.pyplot(fig)
