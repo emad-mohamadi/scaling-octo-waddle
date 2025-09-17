@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_excel('https://docs.google.com/spreadsheets/d/19xdrrRJURV4-Ts_GMUUC8sSe2T5pAqWe/export?format=xlsx', engine='openpyxl')
+df = pd.read_excel('https://docs.google.com/spreadsheets/d/15c1D5JkR_dKDYDGDbfjKvuGaZyWI6TFZ/export?format=xlsx', engine='openpyxl')
 
 st.title("Professor Search App")
 
@@ -77,4 +77,5 @@ if st.checkbox("Do you want to see a histogram of a numeric column?"):
     ax.set_ylabel("Frequency")
 
     st.pyplot(fig)
+
 
